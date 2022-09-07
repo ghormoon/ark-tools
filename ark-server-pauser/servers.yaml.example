@@ -1,0 +1,8 @@
+servername01:
+  port: 27020
+  host: 127.0.0.1
+  password: server01adminpass
+servername02:
+  port: 27030
+  host: 127.0.0.1
+  password: server02adminpass

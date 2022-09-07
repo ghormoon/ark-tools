@@ -1,0 +1,13 @@
+[Unit]
+Description=ARK Survival Evolved - server pauser
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+User=ark
+Group=ark
+ExecStart=/usr/local/bin/ark-server-pauser
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s INT $MAINPID
+[Install]
+WantedBy=multi-user.target
